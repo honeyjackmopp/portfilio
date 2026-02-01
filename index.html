@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MY PORTFOLIO | TOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+// rollover.js
+(function () {
+  function rolloverListener (event) {
+    var target, relatedTarget, reg, src;
+
+    target = event.target || event.toElement;
+    relatedTarget = event.relatedTarget || event.fromElement;
+
+    if (target.tagName === 'IMG') {
+      reg = /_off(?=\.\w+$)/;
+      src = target.src;
+
+      if (reg.test(src)) {
+        target.src = src.replace(reg, '_on');
+      }
+    }
+
+    if (relatedTarget && relatedTarget.tagName === 'IMG') {
+      reg = /_on(?=\.\w+$)/;
+      src = relatedTarget.src;
+
+      if (reg.test(src)) {
+        relatedTarget.src = src.replace(reg, '_off');
+      }
+    }
+  }
+
+  if (document.addEventListener) {
+    document.addEventListener('mouseover', rolloverListener, false);
+  } else if (document.attachEvent) {
+    document.attachEvent('onmouseover', rolloverListener);
+  }
+
+})();
+</script>
+</head>
+<body>
+  <header>
+    <h1><img src="img/img_ttl.png" alt="Web Designer name"></h1>
+    </header>
+
+  <section class="skills">
+  <h2>SKILLS</h2>
+<ul>
+  <li>
+    <img src="img/img_skill01_off.png" alt="">
+    <p>Coding</p>
+  </li>
+
+  <li>
+    <img src="img/img_skill02_off.png" alt="">
+  <p>Design / Photoshop</p>
+</li>
+
+  <li>
+    <img src="img/img_skill03_off.png" alt="">
+    <p>Design / Illustrator</p>
+  </li>
+
+  <li>
+    <img src="img/img_skill04_off.png" alt="">
+    <p>Free Art</p>
+  </li>
+
+  <li>
+    <img src="img/img_skill05_off.png" alt="">
+    <p>Music</p>
+  </li>
+
+</ul>	
+</section><!--skills-->
+
+<section class="works">
+  <h2>WORKS</h2>
+    <ul>
+      <li><a href="works/works01.html"><img src="img/img_top_works01.jpg" alt="実績1"></a></li>
+      <li><a href="works/works02.html"><img src="img/img_top_works02.jpg" alt="実績2"></a></li>
+      <li><a href="works/works03.html"><img src="img/img_top_works03.jpg" alt="実績3"></a></li>
+      <li><a href="works/works04.html"><img src="img/img_top_works04.jpg" alt="実績4"></a></li>
+      <li><a href="works/works05.html"><img src="img/img_top_works05.jpg" alt="実績5"></a></li>
+      <li><a href="works/works06.html"><img src="img/img_top_works06.jpg" alt="実績6"></a></li>
+      <li><a href="works/works07.html"><img src="img/img_top_works07.jpg" alt="実績7"></a></li>
+      <li><a href="works/works08.html"><img src="img/img_top_works08.jpg" alt="実績8"></a></li>
+    </ul>
+
+  <div class="more">
+    <a href="works/index.html">VIEW MORE</a>	
+  </div>
+</section><!--works-->
+
+<section class="profile">
+  <h2>PROFILE</h2>
+
+    <div class="profWrap clearfix">
+    <div class="pht">
+<img src="img/img_profile.jpg" alt="">	
+    </div>
+
+    <div class="txt">
+<p class="nam">ASUKA KATOU</p>
+  <p>横浜市出身。<br>
+  音楽活動を通じてロックバンドのＣＤジャケットデザイン、衣装デザインをしていました。<br>
+  後に印刷関係の会社でillustrator、Photoshopを使用するイベント看板製作企業に従事。<br>
+  その後一時長期間デザインなどから離れており、一念発起で再度一から学ぶことを決意。<br>
+  2026年1月Fammスクール Webデザイン講座を卒業。<br>
+  現在は個人で鍛錬を続けながら依頼をいただいております。<br>
+  <br>
+  <p class="nam">LIKE</p>
+  <p>犬/ゲーム/音楽鑑賞・制作/唄/アニメ/写真/絵を描く/お酒/旅行・・・＆more</p>
+</p>	
+</div>
+</div>
+</section><!--profile-->
+
+<section class="contact">
+<h2>CONTACT</h2>
+<form class="contactForm" action="mail.php" method="post">
+<input type="text" name="name" value="NAME">
+<input type="email" name="email" value="MAIL" placeholder="">
+<textarea name="message"></textarea>
+<input type="submit" value="SEND">
+</form>
+</section><!--contact-->
+
+<footer>
+<div class="pageTop">
+<a href="#"><img src="img/btn_pagetop.png" alt=""></a>
+</div>
+<p>TANKS FOR VISIT!</p>
+</footer>
+
+<script type="text/javascript">
+//ページ内リンク、#非表示。スムーズスクロール
+$('a[href^="#"]').click(function(){
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+</script>
+</body>
+</html>
