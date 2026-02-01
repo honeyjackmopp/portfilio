@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MY PORTFOLIO | WORKS -Details-</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="css/works.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    directionNav: "false"
+  });
+});
+</script>
+</head>
+<body>
+<header>
+<h1>WORKS -Details-</h1>	
+</header><!-- /header -->
+
+<section class="detailImg">
+<h2>Web Design -Detail-</h2>
+
+<div class="flexslider">
+<ul class="slides">
+<li><img src="img/detail/img_slide_works01_1.jpg"></li>
+<li><img src="img/detail/img_slide_works01_2.jpg"></li>
+<li><img src="img/detail/img_slide_works01_3.jpg"></li>
+<li><img src="img/detail/img_slide_works01_4.jpg"></li>
+
+</ul>
+</div>
+
+</section>
+
+<section class="detailInfo">
+<h3>6</h3>
+<p class="desc">
+  comming soon...
+</p>
+
+<ul>
+<li>
+<h4>担当箇所</h4>
+<p>@@@</p>		
+</li>
+
+<li>
+<h4>制作期間</h4>
+<p>@@@</p>		
+</li>
+
+<li>
+<h4>URL</h4>
+<p><a href="#" target="blank">URL</a></p>		
+</li>
+
+</ul>
+
+<div class="back"><a href="index.html">一覧へ戻る</a></div>
+</section>
+
+<footer>
+<div class="pageTop">
+<a href="#"><img src="../img/btn_pagetop.png" alt=""></a>
+</div>
+<p>TANKS FOR VISIT!</p>
+</footer>
+
+<script type="text/javascript">
+//ページ内リンク、#非表示。スムーズスクロール
+$('a[href^="#"]').click(function(){
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+</script>
+</body>
+</html>
