@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MY PORTFOLIO | WORKS -Details-</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="css/works.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    directionNav: "false"
+  });
+});
+</script>
+</head>
+<body>
+<header>
+<h1>WORKS -Details-</h1>	
+</header><!-- /header -->
+
+<section class="detailImg">
+<h2>Web Design -Detail-</h2>
+
+<div class="flexslider">
+<ul class="slides">
+<li><img src="img/detail/img_slide_works05_1.jpg"></li>
+<li><img src="img/detail/img_slide_works00.jpg"></li>
+<li><img src="img/detail/img_slide_works00.jpg"></li>
+<li><img src="img/detail/img_slide_works00.jpg"></li>
+
+</ul>
+</div>
+
+</section>
+
+<section class="detailInfo">
+<h3>お酒の広告フライヤーデザイン（架空）</h3>
+<p class="desc">
+架空のお酒の販売目的の広告フライヤーデザインを制作しました。<br>
+ターゲット層を考慮し、視覚的に情報が伝わりやすいデザインを心掛けました。<br>
+カラースキームやフォント選びにも注意を払い、ブランドイメージに合ったスタイルを追求しました。<br>
+ターゲット層⇒一段階大人へのステップへランクアップしたい30代位。質にもこだわり始めてるけどまだ手を出せていないので<br>
+最高級よりも手を出しやすい中級のものから始めたい。</p>
+  イメージ⇒落ち着いた、和の要素、少しだけキャッチーに<br>
+  素材/フリー素材/お酒⇒生成AIフリー素材 使用。<br>
+</p>
+
+<ul>
+<li>
+<h4>担当箇所</h4>
+<p>デザイン</p>		
+</li>
+
+<li>
+<h4>制作期間</h4>
+<p>2026年1月〜2026年1月（約3時間）</p>		
+</li>
+
+<li>
+<h4>URL</h4>
+<p><a href="#" target="blank"></a></p>		
+</li>
+
+</ul>
+
+<div class="back"><a href="index.html">一覧へ戻る</a></div>
+</section>
+
+<footer>
+<div class="pageTop">
+<a href="#"><img src="../img/btn_pagetop.png" alt=""></a>
+</div>
+<p>TANKS FOR VISIT!</p>
+</footer>
+
+<script type="text/javascript">
+//ページ内リンク、#非表示。スムーズスクロール
+$('a[href^="#"]').click(function(){
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+</script>
+</body>
+</html>
