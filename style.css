@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #4b4b4b;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+h2{
+	font-family: Futura, sans-serif;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    padding-top: 60px;
+}
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+/*------------------
+
+	header
+
+-------------------*/
+header{
+	background: url(../img/bg_mainimg.jpg) no-repeat top;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+header h1{
+	position: absolute;
+    width: 100%;
+    height: 282px;
+    position: absolute;
+    top: 25%;
+    margin: 0;
+}
+header h1 img{
+    display: block;
+    width: 16%;
+    margin: 0 auto;
+    max-width: 282px;
+}
+/*------------------
+
+	skills
+
+-------------------*/
+.skills{
+	background-color: #fff;
+    margin-bottom: 60px;
+}
+.skills ul{
+	max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+}
+.skills ul li{
+    display: inline-block;
+    margin-right: 12px;
+}
+.skills ul li:last-child{
+	margin-right: 0;
+}
+.skills ul li img{
+	margin-bottom: 10px;
+}
+.skills p{
+    font-size: 1.2rem;
+    letter-spacing: 0.07em;
+}
+/*------------------
+
+	works
+
+-------------------*/
+.works{
+	background: url('../img/bg_works.jpg') no-repeat top;
+	padding-bottom: 60px;
+}
+.works ul{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.works ul li{
+
+}
+.works a{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+.works a:hover{
+    opacity: 0.8;
+}
+.more{
+	text-align: center;
+}
+.more a{
+    display: block;
+    width: 290px;
+    margin: #c58b8a;;
+    margin: 0 auto;
+    background-color: #c58b8a;
+    border-radius: 20px;
+    padding: 10px;
+    color: #22181b;
+    font-family: Futura, sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+.more a:hover{
+	background-color: #c58b8a;
+    color: #8b465a;
+    transition: 0.2s;
+}
+/*------------------
+
+	profile
+
+-------------------*/
+.profile{
+    margin-bottom: 60px;
+}
+.profWrap{
+    max-width: 980px;
+    margin: 0 auto;
+}
+.pht{
+	max-width: 370px;
+    float: left;
+    margin-right: 30px;
+}
+.txt{
+    max-width: 580px;
+    float: right;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.txt p{
+	margin: 0;
+	margin-bottom: 20px;
+}
+p.nam{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+/*------------------
+
+	contact
+
+-------------------*/
+.contact{
+    background-color: #22181b;
+    padding-bottom: 60px;
+}
+.contactForm{
+    max-width: 500px;
+    margin: 0 auto;
+}
+input{
+	border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: #eadfd1;
+    font-size: 1.4rem;
+    color: #1e1b18;
+    padding-left: 10px;
+    outline: none;
+}
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #c58b8a;
+    color: #22181b;
+    letter-spacing: 5px;
+    font-size: 1.6rem;
+}
+textarea{
+	display: block;
+    width: 80%;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: none;
+    background-color: #eadfd1;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.4rem;
+}
+/*------------------
+
+	footer
+
+-------------------*/
+footer{
+    background-color: #c58b8a;
+    color: #22181b;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+}
+footer p{
+	margin: 0;
+	padding: 20px 0;
+	font-family: Futura, sans-serif;
+}
+.pageTop{
+	position: absolute;
+    top: -30px;
+    right: 0;
+    left: 0;
+}
+
+/*-------------------------------------------
+
+    SPレイアウト用
+
+-------------------------------------------*/
+@media screen and (max-width: 680px) {
+    .br-sp {
+    display: none;
+    }
+    img{
+        max-width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+    header h1{
+        height: auto;
+        top: 36%;
+    }
+    header h1 img{
+        width: 50%;
+    }
+    .skills{
+        margin-bottom: 10%;
+    }
+    .skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 3%;
+    }
+    .skills ul li{
+        display: block;
+        width: 48%;
+        margin-right: 0;
+    }
+    .skills ul li img{
+        margin-bottom: 0;
+    }
+    .works ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 3%;
+    }
+    .works ul li{
+        width: 48%;
+    }
+    .works{
+        padding-bottom: 10%;     
+    }
+    .pht{
+        margin: 0 auto;
+        float: none;
+    }
+    .txt{
+        margin: 0 auto;
+    }
+}
+
