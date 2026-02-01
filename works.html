@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MY PORTFOLIO | WORKS -Details-</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="css/works.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    directionNav: "false"
+  });
+});
+</script>
+</head>
+<body>
+<header>
+<h1>WORKS -Details-</h1>	
+</header><!-- /header -->
+
+<section class="detailImg">
+<h2>Web Design -Detail-</h2>
+
+<div class="flexslider">
+<ul class="slides">
+<li><img src="img/detail/img_slide_works01_1.jpg"></li>
+<li><img src="img/detail/img_slide_works00.jpg"></li>
+<li><img src="img/detail/img_slide_works00.jpg"></li>
+<li><img src="img/detail/img_slide_works00.jpg"></li>
+
+</ul>
+</div>
+
+</section>
+
+<section class="detailInfo">
+<h3>海外旅行バナー（架空）</h3>
+<p class="desc">
+  海外旅行のバナーをデザインしました。<br>
+  ロイヤリティを出すために高級感のある色味を使用し、上品で美しいイメージを意識しました。<br>
+  ターゲット層⇒年に 1 度以上海外旅行を楽しむ、比較的富裕層。<br>
+  大人数でのパッケージツアーに飽きてきた。もっと自由に旅行したいが、自分で計画するのは苦手。<br>
+  イメージ⇒高級、優雅、上品、美しい<br>
+素材/お題サイト、フリー素材 使用。<br></p>
+<ul>
+<li>
+<h4>担当箇所</h4>
+<p>デザイン</p>		
+</li>
+
+<li>
+<h4>制作期間</h4>
+<p>2026年1月〜2026年1月（約半日）</p>		
+</li>
+
+<li>
+<h4>URL（お題元）</h4>
+<p><a href="#" target="blank">https://www.webcreatorbox.com/blog/banner-design-10#h8d369d6ae5</a></p>		
+</li>
+
+</ul>
+
+<div class="back"><a href="index.html">一覧へ戻る</a></div>
+</section>
+
+<footer>
+<div class="pageTop">
+<a href="#"><img src="../img/btn_pagetop.png" alt=""></a>
+</div>
+<p>TANKS FOR VISIT!</p>
+</footer>
+
+<script type="text/javascript">
+//ページ内リンク、#非表示。スムーズスクロール
+$('a[href^="#"]').click(function(){
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+</script>
+</body>
+</html>
