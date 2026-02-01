@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MY PORTFOLIO | WORKS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="css/works.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<header>
+<h1>WORKS</h1>	
+</header><!-- /header -->
+
+<section class="worksList">
+<h2>Web Design</h2>
+<ul>
+<li>
+    <a href="works01.html"><img src="img/img_works01_thum.jpg" alt="実績1"></a>
+    <p class="ttl">実績1</p>  
+    <a href="works02.html"><img src="img/img_works02_thum.jpg" alt="実績2"></a>
+    <p class="ttl">実績2</p>
+    <a href="works03.html"><img src="img/img_works03_thum.jpg" alt="実績3"></a>
+    <p class="ttl">実績3</p>
+    <a href="works04.html"><img src="img/img_works04_thum.jpg" alt="実績4"></a>
+    <p class="ttl">実績4</p>
+    <a href="works05.html"><img src="img/img_works05_thum.jpg" alt="実績5"></a>
+    <p class="ttl">実績5</p>
+    <a href="works06.html"><img src="img/img_works00_thum.jpg" alt="実績1"></a>
+    <p class="ttl">実績6</p>
+    <a href="works07.html"><img src="img/img_works00_thum.jpg" alt="実績1"></a>
+    <p class="ttl">実績7</p>
+    <a href="works08.html"><img src="img/img_works00_thum.jpg" alt="実績1"></a>
+    <p class="ttl">実績8</p>
+</li>
+
+</ul>
+<div class="back"><a href="../index.html">一覧へ戻る</a></div>
+</section>
+
+
+<footer>
+<div class="pageTop">
+<a href="#"><img src="../img/btn_pagetop.png" alt=""></a>
+</div>
+<p>TANKS FOR VISIT!</p>
+</footer>
+
+<script type="text/javascript">
+//ページ内リンク、#非表示。スムーズスクロール
+$('a[href^="#"]').click(function(){
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$("html, body").animate({scrollTop:position}, speed, "swing");
+return false;
+});
+</script>
+</body>
+</html>
